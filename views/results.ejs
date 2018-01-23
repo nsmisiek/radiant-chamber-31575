@@ -1,0 +1,18 @@
+<h1>Narodowy Bank Polski</h1>
+
+
+<ul>
+    <% data.forEach(function(kurs) { %>
+        <p>
+            Aktualna Cena złota na dzień <%= kurs["data"] %> to: <%= kurs["cena"] %>zł. 
+        </p>
+    
+    <% }) %>
+</ul>
+
+<p>
+    <a href="/results2">Sprawdź również aktualny kurs GPB</a>
+</p>
+<p>
+    <a href="/">Wróć</a>
+</p>

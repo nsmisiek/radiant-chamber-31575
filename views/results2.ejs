@@ -1,0 +1,16 @@
+<h1>Narodowy Bank Polski</h1>
+
+
+<ul>
+    <% data["rates"].forEach(function(kurs) { %>
+        <p>
+            Cena Funta Brytyjskiego na dzień <%= kurs["effectiveDate"] %> to: <%= kurs["mid"] %>zł.
+        </p>
+    <% }) %>
+</ul>
+<p>
+    <a href="/results">Sprawdź również aktualny kurs złota</a>
+</p>
+<p>
+    <a href="/">Wróć</a>
+</p>
